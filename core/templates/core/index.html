@@ -1,0 +1,264 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nilesh Yadav | Python & Django Developer</title>
+  <meta name="description" content="B.Tech CSE Student & Python Django Developer from Kushinagar, UP"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+</head>
+<body>
+
+<!-- ====== NAVBAR ====== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-logo">Nilesh <span>Yadav</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-icons">
+      <a href="https://github.com/Nilsingh1234/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/nilesh-yadav-35ba54356/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:nilesh3137006@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ====== HERO ====== -->
+<section class="hero" id="home">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-container">
+    <div class="hero-text">
+      <p class="hero-greeting"><span class="wave">👋</span> Hi, I'm</p>
+      <h1 class="hero-name">Nilesh <span class="accent">Yadav</span></h1>
+      <p class="hero-role">B.Tech CSE Student | <span class="accent">Python &amp; Django Developer</span></p>
+      <p class="hero-bio">I build web applications and solve real-world problems using Python, Django and modern technologies.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary"><i class="fas fa-paper-plane"></i> View My Work</a>
+        <a href="{% static 'Nilesh_resume.pdf' %}" download class="btn btn-outline" ><i class="fas fa-download"></i> Download Resume</a>
+      </div>
+      <div class="hero-social">
+        <span>Follow Me</span>
+        <a href="https://github.com/Nilsingh1234/" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nilesh-yadav-35ba54356/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:nilesh3137006@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-image-wrap">
+      <div class="hero-glow"></div>
+      <div class="hero-avatar">
+        <img src="{% static 'a.jpeg' %}" alt="Nilesh Yadav" style="width:100%;height:100%;object-fit:cover;"/>
+      </div>
+      <div class="tech-badge badge-python" title="Python"><i class="fab fa-python"></i></div>
+      <div class="tech-badge badge-html" title="HTML5"><i class="fab fa-html5"></i></div>
+      <div class="tech-badge badge-css" title="CSS3"><i class="fab fa-css3-alt"></i></div>
+      <div class="tech-badge badge-django" title="Django">dj</div>
+      <div class="tech-badge badge-bootstrap" title="Bootstrap"><i class="fab fa-bootstrap"></i></div>
+    </div>
+  </div>
+  <div class="scroll-hint"><i class="fas fa-chevron-down"></i></div>
+</section>
+
+<!-- ====== ABOUT ====== -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-card">
+      <div class="about-left">
+        <div class="about-icon-wrap"><i class="fas fa-user"></i></div>
+        <div>
+          <p class="section-eyebrow">ABOUT ME</p>
+          <h2 class="section-title">Who Am I?</h2>
+          <div class="title-bar"></div>
+          <p class="about-text">I am a B.Tech Computer Science student at R.R. Group of Institutions, Lucknow. I have experience in Python, Django, HTML, CSS, Bootstrap and MySQL. I enjoy building web applications and learning new technologies.</p>
+          <a href="#contact" class="btn btn-primary mt-16">Know More About Me</a>
+        </div>
+      </div>
+      <div class="about-cards-grid">
+        <div class="info-card">
+          <div class="info-icon blue"><i class="fas fa-graduation-cap"></i></div>
+          <div>
+            <p class="info-label">Education</p>
+            <p class="info-value">B.Tech &<br>diploma in Cse</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon purple"><i class="fas fa-code"></i></div>
+          <div>
+            <p class="info-label">Developer</p>
+            <p class="info-value">Python &amp;<br/>Django</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon red"><i class="fas fa-heart"></i></div>
+          <div>
+            <p class="info-label">Interests</p>
+            <p class="info-value">Cricket, Web<br/>Development</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon green"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <p class="info-label">Location</p>
+            <p class="info-value">Ramkola,<br>Kushinagar,<br/>Uttar Pradesh</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== SKILLS ====== -->
+<section class="skills" id="skills">
+  <div class="container">
+    <p class="section-eyebrow">MY SKILLS</p>
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="title-bar"></div>
+    <div class="skills-grid">
+      {% for skill in skills %}
+      <div class="skill-card" data-aos="fade-up">
+        <div class="skill-icon skill-{{ skill.icon_class }}">
+          {% if skill.icon_class == 'html5' %}<i class="fab fa-html5"></i>
+          {% elif skill.icon_class == 'css3' %}<i class="fab fa-css3-alt"></i>
+          {% elif skill.icon_class == 'bootstrap' %}<i class="fab fa-bootstrap"></i>
+          {% elif skill.icon_class == 'python' %}<i class="fab fa-python"></i>
+          {% elif skill.icon_class == 'django' %}<span>dj</span>
+          {% elif skill.icon_class == 'mysql' %}<span class="mysql-text">MySQL</span>
+          {% elif skill.icon_class == 'java' %}<i class="fab fa-java"></i>
+          {% elif skill.icon_class == 'git' %}<i class="fab fa-git-alt"></i>
+          {% endif %}
+        </div>
+        <div class="skill-info">
+          <h3 class="skill-name">{{ skill.name }}</h3>
+          <span class="skill-badge skill-badge-{{ skill.level|lower }}">{{ skill.level }}</span>
+          <div class="skill-dots">
+            {% for i in "12345" %}
+              <span class="dot {% if forloop.counter <= skill.dots %}dot-filled{% endif %}"></span>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ====== PROJECTS ====== -->
+<section class="projects" id="projects">
+  <div class="container">
+    <div class="projects-header">
+      <div>
+        <p class="section-eyebrow">MY PROJECTS</p>
+        <h2 class="section-title">Projects I've Built</h2>
+        <div class="title-bar"></div>
+      </div>
+      <a href="#" class="btn btn-outline-sm">View All Projects <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="projects-grid">
+      {% for project in projects %}
+      <div class="project-card">
+        <div class="project-icon" style="background: {{project.icon_bg}}">
+          <span>{{ project.icon_emoji }}</span>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">{{ project.title }}</h3>
+          <p class="project-desc">{{ project.description }}</p>
+          <div class="project-tags">
+            {% for tag in project.get_tags %}
+            <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+          <div class="project-links">
+            <a href="{{ project.live_url }}" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="{{ project.github_url }}" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>  
+
+<!-- ====== CONTACT ====== -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p class="section-eyebrow">GET IN TOUCH</p>
+        <h2 class="section-title">Contact Me</h2>
+        <div class="title-bar"></div>
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="fas fa-envelope contact-icon"></i>
+            <span>nilesh3137006@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone contact-icon"></i>
+            <span>+91 9807364939</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt contact-icon"></i>
+            <span>Ramkola,Kushinagar, Uttar Pradesh, India</span>
+          </div>
+        </div>
+        <div class="contact-socials">
+          <a href="https://github.com/Nilsingh1234/" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/nilesh-yadav-35ba54356/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/nilesh_yadav_2698/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:nilesh3137006@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="contact-form-wrap">
+        {% if messages %}
+          {% for msg in messages %}
+          <div class="alert alert-{{ msg.tags }}">{{ msg }}</div>
+          {% endfor %}
+        {% endif %}
+        <div id="formSuccess" class="alert alert-success" style="display:none">
+          Message sent successfully! I'll get back to you soon.
+        </div>
+        <form method="post" id="contactForm" novalidate>
+          {% csrf_token %}
+          <div class="form-row">
+            {{ form.name }}
+            {{ form.email }}
+          </div>
+          {{ form.subject }}
+          {{ form.message }}
+          {% if form.errors %}
+          <div class="alert alert-error">Please fix the errors above.</div>
+          {% endif %}
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer class="footer">
+  <div class="footer-container">
+    <p class="footer-copy">&copy; 2026 Nilesh Yadav. All Rights Reserved.</p>
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+    <p class="footer-credit">Designed &amp; Built <span class="heart">❤</span> by Nilesh Yadav</p>
+  </div>
+</footer>
+
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
