@@ -830,6 +830,7 @@ input.form-input { margin-bottom: 0; }
     z-index: 999;
     gap: 8px;
   }
+  
   .skills-grid { grid-template-columns: repeat(2, 1fr); }
   .projects-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
