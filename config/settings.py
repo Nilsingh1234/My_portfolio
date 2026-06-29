@@ -65,6 +65,8 @@ else:
             "NAME": BASE_DIR / "db.sqlite3",
         }
     }
+print("DATABASE_URL exists:", bool(os.environ.get("DATABASE_URL")))
+print("ENGINE:", DATABASES["default"]["ENGINE"])
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
